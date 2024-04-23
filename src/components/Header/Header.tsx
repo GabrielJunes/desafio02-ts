@@ -1,9 +1,10 @@
-import './Header.css'
+import { Heading, HeadingProps } from '@chakra-ui/react'
 
-export const Header  = () => {
+export const MyHeader  = ({...rest} : HeadingProps) => {
   return(
-    <div className='header'>
-      Dio Bank
-    </div>
+    <Heading  {...rest}>
+     Dio Bank
+    </Heading>
+    
   )
 }
